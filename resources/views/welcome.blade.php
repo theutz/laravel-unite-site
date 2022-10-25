@@ -20,6 +20,26 @@
                 </p>
             </header>
             <hr>
+            <h2>Examples</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ([['500 g', 'oz'], ['200 ounces', 'grams']] as [$from, $to])
+                        <tr>
+                            <td>{{ $from }}</td>
+                            <td>{{ $to }}</td>
+                            <td>{{ Unite::convert($from)->to($to) }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
