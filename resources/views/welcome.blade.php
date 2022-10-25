@@ -10,12 +10,17 @@
 
 <body>
     <div class="container mx-auto p-8">
-        <h1 class="text-3xl font-bold underline">
-            {{ __('Laravel Unité') }}
-        </h1>
-        <h2 class="text-xl mt-8">
-            {{ __('A unified toolkit for working with units in Laravel.') }}
-        </h2>
+        <div class="prose mx-auto">
+            <header>
+                <h1>
+                    {{ __('Laravel Unité') }}
+                </h1>
+                <p>
+                    {{ __('A unified toolkit for working with units in Laravel.') }}
+                </p>
+            </header>
+            <hr>
+        </div>
     </div>
 </body>
 
